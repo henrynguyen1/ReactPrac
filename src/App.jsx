@@ -11,16 +11,28 @@ class App extends React.Component {
 
 // Research state managment components
 render(){
-
-    return (
-        <div>
+    return (    
     <Router>
+        <div className="app">
+            <div className="headerContainer">
+            <Route exact path="/" render={props => (
+                                <React.Fragment>
+                                <div>
+                                   <div className="center">
+                                        <Header/>
+                                   </div>
+                                </div>
+                                </React.Fragment>
+                            )} />
+            </div>
     <routes>
        
 
     </routes>
-    </Router>
+
     </div>
+    </Router>
+    
     
     )
 }
