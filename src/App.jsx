@@ -18,15 +18,13 @@ class App extends React.Component {
               path="/"
               render={(props) => (
                 <React.Fragment>
-                  <div>
-                    <div className="center"></div>
-                  </div>
+                  
                 </React.Fragment>
               )}
             />
             <Route
               exact
-              path="/balance"
+              path="/kingdom"
               render={(props) => (
                 <React.Fragment>
                   <BalanceManagement />
@@ -35,7 +33,7 @@ class App extends React.Component {
             />
             <Route
               exact
-              path="/account"
+              path="/republic"
               render={(props) => (
                 <React.Fragment>
                   <AccountDetails />
@@ -44,7 +42,34 @@ class App extends React.Component {
             />
             <Route
               exact
-              path="/topup"
+              path="/imperial"
+              render={(props) => (
+                <React.Fragment>
+                  <Topup />
+                </React.Fragment>
+              )}
+            />
+            <Route
+              exact
+              path="/byzantine"
+              render={(props) => (
+                <React.Fragment>
+                  <Topup />
+                </React.Fragment>
+              )}
+            />
+            <Route
+              exact
+              path="/store"
+              render={(props) => (
+                <React.Fragment>
+                  <Topup />
+                </React.Fragment>
+              )}
+            />
+            <Route
+              exact
+              path="/login"
               render={(props) => (
                 <React.Fragment>
                   <Topup />
@@ -52,6 +77,7 @@ class App extends React.Component {
               )}
             />
           </div>
+          <Footer/>
         </div>
       </Router>
     );
