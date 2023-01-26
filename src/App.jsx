@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./global/Header";
 import Footer from "./global/Footer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -27,7 +27,6 @@ class App extends React.Component {
               path="/kingdom"
               render={(props) => (
                 <React.Fragment>
-                  <BalanceManagement />
                 </React.Fragment>
               )}
             />
@@ -36,7 +35,7 @@ class App extends React.Component {
               path="/republic"
               render={(props) => (
                 <React.Fragment>
-                  <AccountDetails />
+                 
                 </React.Fragment>
               )}
             />
@@ -45,7 +44,7 @@ class App extends React.Component {
               path="/imperial"
               render={(props) => (
                 <React.Fragment>
-                  <Topup />
+                 
                 </React.Fragment>
               )}
             />
@@ -54,7 +53,7 @@ class App extends React.Component {
               path="/byzantine"
               render={(props) => (
                 <React.Fragment>
-                  <Topup />
+                  
                 </React.Fragment>
               )}
             />
@@ -63,7 +62,7 @@ class App extends React.Component {
               path="/store"
               render={(props) => (
                 <React.Fragment>
-                  <Topup />
+                  
                 </React.Fragment>
               )}
             />
@@ -72,7 +71,7 @@ class App extends React.Component {
               path="/login"
               render={(props) => (
                 <React.Fragment>
-                  <Topup />
+                  
                 </React.Fragment>
               )}
             />
